@@ -2,6 +2,7 @@ package Es1;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 public class Word {
@@ -20,13 +21,13 @@ public class Word {
           }
       }
 
-        HashSet<String> wordSet = new HashSet<>();
+        LinkedHashSet<String> wordSet = new LinkedHashSet<>();
         ArrayList<String> duplicateSet = new ArrayList<>();
         for (int i = 0; i < numberOfWord ; i++) {
             System.out.println("Insert string number" + (i + 1));
             word = input.nextLine();
             if (!wordSet.add(word)){
-                System.out.println(word + "already inserted");
+                System.out.println(word + " already inserted!");
                 duplicateSet.add(word);
             }
         }

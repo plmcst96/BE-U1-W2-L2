@@ -9,7 +9,7 @@ public class Main2 {
         int intero = 0;
 
         while (intero <= 0){
-            System.out.println("insert a number");
+            System.out.println("Insert a number");
             try {
                 intero = Integer.parseInt(input.nextLine());
             } catch (NumberFormatException ex){
@@ -21,6 +21,7 @@ public class Main2 {
         System.out.println(list);
         System.out.println(reverseList(list));
         printIntero(reverseList(list), false);
+        printIntero(reverseList(list), true);
     }
 
 
@@ -47,8 +48,8 @@ public class Main2 {
       while (in.hasNext()){
             num = in.next();
             index = in.nextIndex();
-            if (index % 2 == 0 && t) System.out.println(index + " - " + num);
-            if (index % 2 != 0 && !t) System.out.println(index + " - " + num);
+            if (index % 2 == 0 && t) System.out.println(index + " Pari " + num);
+            if (index % 2 != 0 && !t) System.out.println(index + " Dispari " + num);
         }
   }
 
