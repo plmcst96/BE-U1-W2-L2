@@ -34,7 +34,6 @@ public class Word {
         System.out.println("There are: " + wordSet.size());
         System.out.println("this is the unique words: " + wordSet);
 
-
-
+        input.close();
     }
 }
