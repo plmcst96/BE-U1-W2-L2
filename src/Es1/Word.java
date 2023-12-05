@@ -1,14 +1,15 @@
 package Es1;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class Main {
+public class Word {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
       int numberOfWord = 0;
-      String word = "";
+      String word;
 
       while (numberOfWord <= 0){
           System.out.println("Insert the number of words you want!");
@@ -20,7 +21,7 @@ public class Main {
       }
 
         HashSet<String> wordSet = new HashSet<>();
-        HashSet<String> duplicateSet = new HashSet<>();
+        ArrayList<String> duplicateSet = new ArrayList<>();
         for (int i = 0; i < numberOfWord ; i++) {
             System.out.println("Insert string number" + (i + 1));
             word = input.nextLine();
